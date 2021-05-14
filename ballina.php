@@ -48,15 +48,15 @@ else {
 				<br>
 					<nav>
 		 			     <ul class="navigation">
-				  		 <li><a href="ballina.html">BALLINA</a></li>
+				  		 <li><a href="ballina.php">BALLINA</a></li>
 				  		 <li id="width"><a onclick="narroved_width()" href="#">FULL WIDTH</a></li>
 						   
 						 <li id="dropdowni"><a href="#">KATEGORITË</a>
 							<ul>    
-								<li><a href="mode.html">Modë</a></li>
-								<li><a href="shendet.html">Shëndet</a></li>
-								<li><a href="hobi.html">Hobi</a></li>
-								<li><a href="storjet.html">Storje</a></li>
+								<li><a href="mode.php">Modë</a></li>
+								<li><a href="shendet.php">Shëndet</a></li>
+								<li><a href="hobi.php">Hobi</a></li>
+								<li><a href="storjet.php">Storje</a></li>
 							</ul>
 						 </li>						   
 
@@ -65,9 +65,9 @@ else {
 						
 						<li id="dropdowni"><a href="#">KYÇU/REGJISTROHU</a>
 								<ul>    
-									<li><a href="dragdrop.html">Kyçu</a></li>
-									<li><a href="regjistrimi.html">Regjistrohu</a></li>
-									<li><a href="contact.html">Na kontakto</a></li>
+									<li><a href="dragdrop.php">Kyçu</a></li>
+									<li><a href="regjistrimi.php">Regjistrohu</a></li>
+									<li><a href="contact.php">Na kontakto</a></li>
 								</ul>
 						</li>
 							
@@ -135,7 +135,7 @@ else {
 			
 					<h2><mark style="background-color: #e7e7e7;">Që të bëheni pjesë e faqes sonë, na tregoni storjen tuaj <br>
 						dhe ne e ndajmë atë me botën!</mark></h2>
-					<a href="contact.html">NA KONTAKTONI</a>
+					<a href="contact.php">NA KONTAKTONI</a>
   		   			 </div>
 				</section>
 				
@@ -147,7 +147,7 @@ else {
 							<ul>
 							   <li>
 							  <div class="service_s">
-								<h4><a href="mode.html">Modë</a></h4>
+								<h4><a href="mode.php">Modë</a></h4>
 								<img src="img/mode.jpg" width="100" height="100" alt="Imazh">
 								<p>-Trendet 2020 <br>
 								   -Trendet 2021 <br>
@@ -160,7 +160,7 @@ else {
 									
 							  <li>
 								<div class="service_s">
-								  <h4><a href="shendet.html">Shëndet</a></h4>
+								  <h4><a href="shendet.php">Shëndet</a></h4>
 								  <img src="img/shendet.jpg" width="100" height="100" alt="Imazh">
 								  <p>-Ushqime <br>
 									-Fitnes, joga dhe pilates <br>
@@ -173,7 +173,7 @@ else {
 								
 								<li>
 									<div class="service_s">
-									  <h4><a href="hobi.html">Hobi</a></h4>
+									  <h4><a href="hobi.php">Hobi</a></h4>
 									  <img src="img/hobi.jpg" width="100" height="100" alt="Imazh">
 									  <p>-Udhëtime <br>
 										-Hike <br>
@@ -197,7 +197,7 @@ else {
 							
 							
 							
-						<h2 id="s_button"><a href="storjet.html" >Historitë tuaja </a></h2>
+						<h2 id="s_button"><a href="storjet.php" >Historitë tuaja </a></h2>
 						<div class="facilis_border"></div>
 					   </div>
 						     
