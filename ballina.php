@@ -149,11 +149,18 @@ else {
 							  <div class="service_s">
 								<h4><a href="mode.php">Modë</a></h4>
 								<img src="img/mode.jpg" width="100" height="100" alt="Imazh">
-								<p>-Trendet 2020 <br>
-								   -Trendet 2021 <br>
-								   -Brende <br>
-								   -Blogere
-								</p>
+									<!--indexed arrays -->
+								<?php
+								$trendet = array("Trendet 2020", "Trendet 2021", "Brende","Blogere"); 
+								echo "<br>";
+								echo $trendet[0];
+								echo "<br>";
+								echo $trendet[1];
+								echo "<br>";
+								echo $trendet[2];
+								echo "<br>";
+								echo $trendet[3];
+								?>
 							  </div>
 							  </li>
 	
@@ -162,12 +169,25 @@ else {
 								<div class="service_s">
 								  <h4><a href="shendet.php">Shëndet</a></h4>
 								  <img src="img/shendet.jpg" width="100" height="100" alt="Imazh">
-								  <p>-Ushqime <br>
-									-Fitnes, joga dhe pilates <br>
-									-Ecje në natyrë <br>
-									-Sport <br>
-									-Muzikë për aktivitetet tuaja sportive
-								 </p>
+								  <!-- associative array -->
+								  <?php
+								  $shendet=array(4=>"Ushqime",2=>"Fitnes dhe joga",8=>"Ecje në natyrë",5=>"Sport",9=>"Muzikë për aktivitetet tuaja sportive");
+								 # $shendet[4] = "Ushqime";
+								 # $shendet[2] = "Fitnes dhe joga";
+							     # $shendet[8] = "Ecje në natyrë";
+							     # $shendet[5] = "Sport";
+							     # $shendet[9] = "Muzikë për aktivitetet tuaja sportive";
+							    echo "<br>";
+								echo $shendet[4];
+								echo "<br>";
+								echo $shendet[2];
+								echo "<br>";
+								echo $shendet[8];
+								echo "<br>";
+								echo $shendet[5];
+								echo "<br>";
+								echo $shendet[9];
+								  ?>
 								</div>
 								</li>
 								
@@ -175,11 +195,22 @@ else {
 									<div class="service_s">
 									  <h4><a href="hobi.php">Hobi</a></h4>
 									  <img src="img/hobi.jpg" width="100" height="100" alt="Imazh">
-									  <p>-Udhëtime <br>
-										-Hike <br>
-										-Fotografi <br>
-										-Dekorime
-										 </p>
+									  <!--multidimensional array -->
+									  <?php
+									  $udhetime=array(
+									  		   array("Udhëtime","Hike"),
+									  		   array("Fotografi","Dekorime")
+
+									  );
+									  echo "<br>";
+									  echo $udhetime[0][0];
+									  echo "<br>";
+									  echo $udhetime[0][1];
+										echo "<br>";
+									  echo $udhetime[1][0];
+										echo "<br>";
+									  echo $udhetime[1][1];
+										 ?>
 									</div>
 									</li>
 							  
