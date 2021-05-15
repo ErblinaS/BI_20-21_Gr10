@@ -158,7 +158,7 @@ else {
 
           <nav>
                <ul class="navigation" style="padding-top: 20px;">
-               <li><a href="ballina.html">BALLINA</a></li>
+               <li><a href="ballina.php">BALLINA</a></li>
                <li><a href="#">FULL WIDTH</a></li>
                
                <li id="dropdowni"><a href="#">KATEGORITË</a>
@@ -171,13 +171,13 @@ else {
                </li>
 
                <li><a href="loja.html">LOJA</a></li>
-               <li><a href="gallery.html">GALERIA</a></li>
+               <li><a href="gallery.php">GALERIA</a></li>
                
    						<li id="dropdowni"><a href="#">KYÇU/REGJISTROHU</a>
                <ul>    
-                <li><a href="dragdrop.html">Kyçu</a></li>
-                <li><a href="regjistrimi.html">Regjistrohu</a></li>
-                <li><a href="contact.html">Na kontakto</a></li>
+                <li><a href="dragdrop.php">Kyçu</a></li>
+                <li><a href="regjistrimi.php">Regjistrohu</a></li>
+                <li><a href="contact.php">Na kontakto</a></li>
                </ul>
               </li>
           
@@ -195,19 +195,19 @@ else {
   <div id="error_message"></div>
   <form id="myform" onsubmit="return validate();" style="padding: 20px;">
     <div class="input_field">
-        <input type="text" placeholder="Emri*" id="name" required autofocus>
+        <input type="text" placeholder="Emri*" name="username" id="name" required autofocus>
     </div>
     <div class="input_field">
-        <input type="text" placeholder="Tema*" id="subject">
+        <input type="text" placeholder="Tema*" name="tema" id="subject">
     </div>
     <div class="input_field">
-        <input type="text" placeholder="Numri i telefonit*" id="phone">
+        <input type="text" placeholder="Numri i telefonit*" name="nrtel" id="phone">
     </div>
     <div class="input_field">
-        <input type="text" placeholder="E-mail adresa*" id="email">
+        <input type="text" placeholder="E-mail adresa*" name="email" id="email">
     </div>
     <div class="input_field">
-        <textarea placeholder="Mesazhi*" id="message"></textarea>
+        <textarea placeholder="Mesazhi*" name="mesazhi" id="message"></textarea>
     </div>
     <div class="btn">
         <input type="submit">
@@ -216,10 +216,12 @@ else {
   </form>
 </div>
       
-          
-       
-          
-      
+            <?php
+extract($_REQUEST);
+$file=fopen("file.txt","r");
+echo fread($file,filesize("file.txt"));
+fclose($file);                    
+?>    
       <section id="footer_ContactUs">
         <ul>
           <li>
@@ -301,4 +303,18 @@ else {
                      
   </body>
 </html>
-                                                                                                                 
+  <?php
+extract($_REQUEST);
+$file=fopen("form-save.txt","a");
+fwrite($file,"Emri :");
+fwrite($file,$username."\n");
+fwrite($file,"Tema :");
+fwrite($file,$tema."\n");
+fwrite($file,"Email :");
+fwrite($file,$email."\n");
+fwrite($file,"Numri i telefonit :");
+fwrite($file,$nrtel."\n");
+fwrite($file,"Mesazhi :");
+fwrite($file,$mesazhi."\n");
+fclose($file);
+?>                                                                                                               
