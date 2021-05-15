@@ -11,7 +11,15 @@
 <body onload="addVisitForPage('captcha')">
     
     <div class="wrapper fadeInDown">
-        <p class="fadeIn first" id="info"> Vendos figurën brenda kornizës që të kaloni te forma për kyçje</p>
+        <p class="fadeIn first" id="info">
+            <!--ksort i array -->
+        	 <?php
+				$sorting=array(4=>"figurën",2=>"Vendos",5=>"brenda",6=>"kornizës",7=>"që",5=>"brenda",13=>"te forma për kycje",9=>"të",11=>"kaloni");
+				  ksort($sorting);
+				  foreach ($sorting as $key => $name) {
+				  	echo $name.' ';
+				  }					
+        	?></p>
 
         <div class="fadeIn second" id="container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
