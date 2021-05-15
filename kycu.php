@@ -25,8 +25,35 @@ else {
 </script>
  
 </head>
-<body>
-  <div id="wrapper" class="wrapper">
+<body bgcolor="<?php echo $bgColor ?>" text="<?php echo $txtColor ?>">
+	<?php
+
+    $silver = "";
+    $purple = "";
+    $white = "";
+    $black = "";
+
+    $hour = time() + 3600;
+
+    if (isset($_POST['order'])) {
+        $color = $_POST['order'];
+        $$color = "selected";
+        setcookie("Free_cookies", $color, $hour);
+    }
+    else{
+        $color = "silver";
+        $silver = "selected";
+    }
+    if(isset($_COOKIE['Free_cookies'])){
+        $color = $_COOKIE['Free_cookies'];
+        $$color = "selected";
+    }
+
+?>
+<?php
+setcookie("Free_cookies",$color,time()-3600);
+?>
+  <div id="wrapper" class="wrapper" <?php echo "STYLE='background-color:".$color.";'";?>>
     <header id="head">
       <div class="wrapper1">
         <div class="logo">
@@ -43,26 +70,26 @@ else {
 
           <nav>
                <ul class="navigation" style="padding-top: 20px;">
-               <li><a href="ballina.html">BALLINA</a></li>
+               <li><a href="ballina.php">BALLINA</a></li>
                <li><a href="#">FULL WIDTH</a></li>
                
                <li id="dropdowni"><a href="#">KATEGORITË</a>
                 <ul>    
-                  <li><a href="mode.html">Modë</a></li>
-                  <li><a href="shendet.html">Shëndet</a></li>
-                  <li><a href="hobi.html">Hobi</a></li>
-                  <li><a href="storjet.html">Storje</a></li>
+                  <li><a href="mode.php">Modë</a></li>
+                  <li><a href="shendet.php">Shëndet</a></li>
+                  <li><a href="hobi.php">Hobi</a></li>
+                  <li><a href="storjet.php">Storje</a></li>
                 </ul>
                </li>
 
                <li><a href="loja.html">LOJA</a></li>
-               <li><a href="gallery.html">GALERIA</a></li>
+               <li><a href="gallery.php">GALERIA</a></li>
                
 					   	<li id="dropdowni"><a href="#">KYÇU/REGJISTROHU</a>
                 <ul>    
-                  <li><a href="dragdrop.html">Kyçu</a></li>
-                  <li><a href="regjistrimi.html">Regjistrohu</a></li>
-                  <li><a href="contact.html">Na kontakto</a></li>
+                  <li><a href="dragdrop.php">Kyçu</a></li>
+                  <li><a href="regjistrimi.php">Regjistrohu</a></li>
+                  <li><a href="contact.php">Na kontakto</a></li>
                 </ul>
              </li>
       
@@ -103,7 +130,15 @@ else {
     
   </form>
 </div>
-          
+  <form method='post'<?php echo "STYLE='background-color:".$color.";'";?> ><p id='txtorder'  >Ngjyra: </p>
+    <select name='order' id='order'>
+        <option value="silver"<?php echo $silver; ?> >silver</option>
+        <option value="purple"<?php echo $purple; ?> >purple</option>
+        <option value="white"<?php echo $white; ?> >white</option>
+        <option value="black"<?php echo $black; ?> >black</option>
+    </select>
+    <input type='submit' value='Ndrysho'/>
+</form>          
        
 <section style="padding-top: 10px;" id="footer_ContactUs">
     <ul>
