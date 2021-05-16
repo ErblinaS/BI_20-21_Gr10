@@ -215,11 +215,11 @@ else {
     <p>Fushat me "*" janë obligative për tu plotësuar</p>
   </form>
 </div>
-      
+      <!-- read from file-->
             <?php
 extract($_REQUEST);
 $file=fopen("file.txt","r");
-echo fread($file,filesize("file.txt"));
+echo fread($file,filesize("file.txt"))."<br>";
 fclose($file);                    
 ?>    
       <section id="footer_ContactUs">
