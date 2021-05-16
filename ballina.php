@@ -133,10 +133,19 @@ else {
 				</div>
 				<div class="contact">
 			
-					<h2><mark style="background-color: #e7e7e7;">Që të bëheni pjesë e faqes sonë, na tregoni storjen tuaj <br>
-						dhe ne e ndajmë atë me botën!</mark></h2>
-					<a href="contact.php">NA KONTAKTONI</a>
-  		   			 </div>
+					<h2><mark style="background-color: #e7e7e7;"><?php
+				    $array = array( 'Që të bëheni pjesë e faqes sonë,', 'na tregoni storjen tuaj <br>
+				     dhe ne e ndajmë atë me botën!!');
+
+                    $string = implode(' ', $array); // Perdoret nje hapesire si bashkues midis elementeve
+
+                    echo $string;
+                   ?></mark></h2>
+					<a href="contact.html"><?php
+				$string = " \n NA KONTAKTONI \t\t";
+				echo trim($string);
+			   ?></a>
+  		   	          </div>
 				</section>
 				<<?php
 
