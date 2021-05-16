@@ -138,7 +138,32 @@ else {
 					<a href="contact.php">NA KONTAKTONI</a>
   		   			 </div>
 				</section>
-				
+				<<?php
+
+				class Titulli{
+				public $title;
+				function __construct($aTitle){
+				$this->title = $aTitle;
+				             }
+
+				function getTitle(){
+				return $this->title;
+					           }
+				function setTitle($title) {
+				if(strlen($title)  >= 4){
+				$this->title = $title;
+							}
+				else {
+				$this->title = "Pa titull";
+				     }
+						          }
+						          }
+
+				$title1 = new Titulli("Modë");
+				$title2 = new Titulli("Shëndet");
+				$title3 = new Titulli("Hobi");
+							?>
+
 	 
 				<div>
 					<section id="facilis">
@@ -147,7 +172,7 @@ else {
 							<ul>
 							   <li>
 							  <div class="service_s">
-								<h4><a href="mode.php">Modë</a></h4>
+								<h4><a href="mode.php"><?php echo $title1->getTitle(); ?></a></h4>
 								<img src="img/mode.jpg" width="100" height="100" alt="Imazh">
 									<!--indexed arrays -->
 								<?php
@@ -167,7 +192,7 @@ else {
 									
 							  <li>
 								<div class="service_s">
-								  <h4><a href="shendet.php">Shëndet</a></h4>
+								  <h4><a href="shendet.php"><?php echo $title2->getTitle(); ?></a></h4>
 								  <img src="img/shendet.jpg" width="100" height="100" alt="Imazh">
 								  <!-- associative array -->
 								  <?php
@@ -195,7 +220,7 @@ else {
 								
 								<li>
 									<div class="service_s">
-									  <h4><a href="hobi.php">Hobi</a></h4>
+									  <h4><a href="hobi.php"><?php echo $title3->getTitle(); ?></a></h4>
 									  <img src="img/hobi.jpg" width="100" height="100" alt="Imazh">
 									  <!--multidimensional array -->
 									  <?php
