@@ -315,6 +315,10 @@ else {
 							<a href="mailto:revistalifestyleks@gmail.com">E-mail: revistalifestyleks@gmail.com</a> <br>
 							
 						     </address>
+							<!-- date and time -  built-in function-->
+						     <?php 
+						    $date = date('d-m-y h:i:s');
+							echo $date; ?>
 						    </div>
 						</li>
 					        <li>
