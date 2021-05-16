@@ -316,7 +316,23 @@ else {
 					   </li>
 						   <li>
 					   <div class="f_ContactUs">
-						   <h4>Vegëza </h4>
+						   <h4>
+							   <?php
+									// Example 1
+										$fjala  = "Veg ëza a a a a";
+										$pieces = explode(" ", $fjala);
+										echo $pieces[0]; // piece1
+										echo $pieces[1]; // piece2
+
+									// Example 2
+									$data = "  me:   poshtë:1023:1000::/home/foo:/bin/sh";
+									list($user, $pass, $uid, $gid, $gecos, $home, $shell) = explode(":", $data);
+									echo $user; // me
+									echo $pass; // poshtë
+
+								?>
+						   
+						   </h4>
 						   <ul>
 							   <li><a href="https://www.elle.com/">Revista Elle</a></li>
 							   <li><a href="http://lifestylemagazineonline.com/">Revista Lifestyle US</a></li> 
