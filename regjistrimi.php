@@ -107,10 +107,36 @@ setcookie("Free_cookies",$color,time()-3600);
           <!--<legend>Regjistrimi</legend>-->
             <p style="text-align: center; font-size: 25px; font-weight: bolder; padding: 15px;">Regjistrohu</p>
                 
-                <label> Emri dhe mbriemri: </label>
+                 <?php
+   try {
+      $error = 'Mbiemri';
+      throw new Exception($error);
+      
+      // Kodi që ndjek një përjashtim nuk ekzekutohet.
+      echo 'Nuk është ekzekutuar kurrë';
+   }catch (Exception $e) {
+      echo 'Emri dhe ',  $e->getMessage(), "\n";
+   }
+   
+   // Vazhdoni ekzekutimin
+   echo ':';
+?> 
                 <input type="text" name="name" required autofocus>
 
-                <label> E-maili: </label>
+                <?php
+   try {
+      $error = 'maili';
+      throw new Exception($error);
+      
+      // Kodi që ndjek një përjashtim nuk ekzekutohet.
+      echo 'Nuk është ekzekutuar kurrë';
+   }catch (Exception $e) {
+      echo 'E- ',  $e->getMessage(), "\n";
+   }
+   
+   // Vazhdoni ekzekutimin
+   echo ':';
+?>
                 <input type="email" name="email" autocomplete="on" required>
 
                 <label> Fjalëkalimi: </label>
