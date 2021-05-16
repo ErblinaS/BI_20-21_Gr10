@@ -212,7 +212,19 @@ else {
     <div class="btn">
         <input type="submit">
     </div>
-    <p>Fushat me "*" janë obligative për tu plotësuar</p>
+    <p>
+     <?php
+   function exception_handler($exception) {
+      echo "Fushat me * janë obligative" , $exception->getMessage(), "\n";
+   }
+	
+   set_exception_handler('exception_handler');
+   throw new Exception('për tu plotësuar');
+   
+   echo "Not Executed\n";
+?>
+   
+   </p>
   </form>
 </div>
       <!-- read from file-->
