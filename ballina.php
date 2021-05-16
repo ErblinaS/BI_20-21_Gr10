@@ -178,7 +178,9 @@ else {
 							     # $shendet[5] = "Sport";
 							     # $shendet[9] = "Muzikë për aktivitetet tuaja sportive";
 							    echo "<br>";
-								echo $shendet[4];
+								#definimi i konstantes
+								define("FOOD", "Ushqime");
+								echo FOOD;
 								echo "<br>";
 								echo $shendet[2];
 								echo "<br>";
