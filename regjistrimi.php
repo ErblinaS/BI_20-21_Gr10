@@ -139,7 +139,21 @@ setcookie("Free_cookies",$color,time()-3600);
 ?>
                 <input type="email" name="email" autocomplete="on" required>
 
-                <label> Fjalëkalimi: </label>
+                //Fjalkalimi
+                <?php
+   try {
+      $error = 'kalimi';
+      throw new Exception($error);
+      
+      // Kodi që ndjek një përjashtim nuk ekzekutohet.
+      echo 'Nuk është ekzekutuar kurrë';
+   }catch (Exception $e) {
+      echo 'Fjalë',  $e->getMessage(), "\n";
+   }
+   
+   // Vazhdoni ekzekutimin
+   echo ':';
+?>
                 <input id="password" type="password" name="password" required>
 
                 <label> Rishkruaj fjalëkalimin: </label>
