@@ -286,6 +286,31 @@ setcookie("Free_cookies",$color,time()-3600);
                     </form>
                     </div>
                 </div>
+                    <?php
+   try {
+      $error = 'Mbiemri';
+      throw new Exception($error);
+      
+      // Kodi që ndjek një përjashtim nuk ekzekutohet.
+      echo 'Nuk është ekzekutuar kurrë';
+   }catch (Exception $e) {
+      echo 'Emri dhe ',  $e->getMessage(), "\n";
+   }
+   
+   // Vazhdoni ekzekutimin
+   echo 'Pershendetje';
+?>
+</br>
+<?php
+   function exception_handler($exception) {
+      echo "Pershendetje: " , $exception->getMessage(), "\n";
+   }
+	
+   set_exception_handler('exception_handler');
+   throw new Exception('nga une!');
+   
+   echo "Not Executed\n";
+?>
             </li>
         </ul>
     <ul id="icons" class="social-icons">
