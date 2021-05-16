@@ -296,8 +296,32 @@ else {
 					   <img src="img/argetuese.jpg" width="300" height="170" alt="img4">
 					   <h4> Argëtuese </h4>	
 					   <p> Përmes programit argëtues "Qielli është i të gjithëve",
-							u argëtuan 23 të rinjë. Të rinjtë sëbashku performuar lojra për njohjen e njëri –tjetrit, 
-							lojra, role të ndryshme etj. </p>
+							u argëtuan 23 të rinjë. Të rinjtë sëbashku performuar lojra për njohjen e 
+						    <?php
+							class Foo
+								{
+  								  protected $title;
+
+    							public function __construct($title)
+    								{
+       								 $this->title = $title;
+    								}
+
+   							     public function __toString()
+    								{
+        							   return $this->title;
+    								}
+								}
+
+								$array = [
+   							     new Foo('njëri –tjetrit'),
+   								 new Foo('lojra'),
+   								 new Foo('role të ndryshme')
+								];
+
+								echo implode('; ', $array);
+							?> etj. </p>
+				
 				       </div>
 				   </li>
 						   
