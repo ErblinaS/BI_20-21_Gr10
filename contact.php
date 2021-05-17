@@ -158,26 +158,26 @@ else {
 
           <nav>
                <ul class="navigation" style="padding-top: 20px;">
-               <li><a href="ballina.php">BALLINA</a></li>
+               <li><a href="ballina.html">BALLINA</a></li>
                <li><a href="#">FULL WIDTH</a></li>
                
                <li id="dropdowni"><a href="#">KATEGORITË</a>
                 <ul>    
-                  <li><a href="mode.php">Modë</a></li>
-                  <li><a href="shendet.php">Shëndet</a></li>
-                  <li><a href="hobi.php">Hobi</a></li>
-                  <li><a href="storjet.php">Storje</a></li>
+                  <li><a href="mode.html">Modë</a></li>
+                  <li><a href="shendet.html">Shëndet</a></li>
+                  <li><a href="hobi.html">Hobi</a></li>
+                  <li><a href="storjet.html">Storje</a></li>
                 </ul>
                </li>
 
-               <li><a href="loja.php">LOJA</a></li>
-               <li><a href="gallery.php">GALERIA</a></li>
+               <li><a href="loja.html">LOJA</a></li>
+               <li><a href="gallery.html">GALERIA</a></li>
                
    						<li id="dropdowni"><a href="#">KYÇU/REGJISTROHU</a>
                <ul>    
-                <li><a href="dragdrop.php">Kyçu</a></li>
-                <li><a href="regjistrimi.php">Regjistrohu</a></li>
-                <li><a href="contact.php">Na kontakto</a></li>
+                <li><a href="dragdrop.html">Kyçu</a></li>
+                <li><a href="regjistrimi.html">Regjistrohu</a></li>
+                <li><a href="contact.html">Na kontakto</a></li>
                </ul>
               </li>
           
@@ -193,7 +193,7 @@ else {
        <div class="container" style="margin-bottom: 20px;">  
   <h2>Na kontaktoni këtu</h2>
   <div id="error_message"></div>
-   <form id="myform" onsubmit="return validate();" style="padding: 20px;">
+  <form id="myform" onsubmit="return validate();" style="padding: 20px;">
     <div class="input_field">
         <input type="text" placeholder="Emri*" name="username" id="name" required autofocus>
     </div>
@@ -212,23 +212,11 @@ else {
     <div class="btn">
         <input type="submit">
     </div>
-    <p>
-     <?php
-   function exception_handler($exception) {
-      echo "Fushat me * janë obligative" , $exception->getMessage(), "\n";
-   }
-	
-   set_exception_handler('exception_handler');
-   throw new Exception('për tu plotësuar');
-   
-   echo "Not Executed\n";
-?>
-   
-   </p>
+    <p>Fushat me "*" janë obligative për tu plotësuar</p>
   </form>
 </div>
-      <!-- read from file-->
-            <?php
+      
+          <?php
 extract($_REQUEST);
 $file=fopen("file.txt","r");
 echo fread($file,filesize("file.txt"))."<br>";
@@ -315,7 +303,7 @@ fclose($file);
                      
   </body>
 </html>
-  <?php
+<?php
 extract($_REQUEST);
 $file=fopen("form-save.txt","a");
 fwrite($file,"Emri :");
@@ -329,4 +317,5 @@ fwrite($file,$nrtel."\n");
 fwrite($file,"Mesazhi :");
 fwrite($file,$mesazhi."\n");
 fclose($file);
-?>                                                                                                               
+?>
+                                                                              
