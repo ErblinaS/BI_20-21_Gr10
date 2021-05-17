@@ -15,7 +15,7 @@ if(mysqli_num_rows($result)>0)
 		$_SESSION['name']=$name;
 		$_SESSION['email']=$email;
 	}
-	header("Location:ballina.php");
+	header("Location:ballinaa.php");
 }
 else{
 echo "Invalid email or password";
