@@ -103,8 +103,12 @@ else {
 				                      				   echo rtrim($string);
 			                        				?>
 										 </a></p>
-									 <p><a href="https://www.vogue.com/article/fall-2020-biggest-street-style-trends" target="_blank">
-									     8 trendet e veshjeve vjeshtore "Street style"</a></p>
+									 <a href="https://www.vogue.com/article/fall-2020-biggest-street-style-trends" target="_blank">
+									     <?php
+										$number = 2020;
+										printf("8 Brende e veshjeve vjeshtore me çmim: %1\$.2f $
+										<br>Brende e veshjeve me te shituara: %1\$u",$number);
+										?></a>
 						   		</div>
 					       </li>
 						     
