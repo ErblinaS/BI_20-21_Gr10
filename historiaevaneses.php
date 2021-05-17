@@ -62,6 +62,45 @@
 					</div>	
 					
 		 		</header>
+			<?php
+			class Person {
+				private $name = 'Vanesa';
+				private $lastname = 'Smith';
+
+public function __construct($name, $lastname)
+{
+	$this->name=$name;
+		$this->lastname=$lastname;
+}
+public function __destruct()
+{
+	echo "I am deleted: " .$this->name.PHP_EOL;
+}
+public function getName(){
+	return $this->name;
+}
+public function getlastName(){
+	return $this->lastname;
+}
+}
+	class Author extends Person
+	{
+		private $book;
+
+		function __construct($name, $lastname, $book)
+		{
+			$this->name=$name;
+				$this->lastname=$lastname;
+				$this->book=$book;
+		}
+	}
+	$person1 = new Person('Vanesa', 'Smithh');
+	$author1 = new Author('Filan', 'Fisteku', 'Krim dhe ndeshkim');
+
+
+			 ?>
+
+
 			
 	         <main>      	 
 
@@ -174,6 +213,11 @@
 					</span>
 				     </p>
 			        </div>
+			    <?php 	echo "Personazhi i javës:";
+								 echo  $author1->getName();
+								 	unset($author1);
+									sleep(seconds:2);
+								 ?>
 			  </footer>	
 		</main>	
 	</div>		
