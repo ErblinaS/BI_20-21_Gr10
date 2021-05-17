@@ -458,7 +458,16 @@ else {
 						   Rr. "Eqrem Çabej"<br>
 						   Prishtinë, Kosovë <br>
 						   10000 <br>
-						   Tel: +383 44 000 000 <br>
+						   Tel: <?php
+  							 $ip = "+383.44.000.000"; // nr.tel
+   							$iparr = preg_split ("/\./", $ip); 
+   
+  							 print "$iparr[0] ";
+  							 print "$iparr[1] ";
+ 						         print "$iparr[2] ";
+  							 print "$iparr[3] ";
+								?> 
+								<br>
 						   Fax: +383 38 000 000 <br>
 						   E-mail: revistalifestyleks@gmail.com <br>
 						   
