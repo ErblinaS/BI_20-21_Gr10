@@ -516,7 +516,14 @@ else {
 		   
 		   <footer>
 				<div class="footer_text">
-					<p> Copyright © 2013-All Rights Reserved - Domain Name
+					<p> 
+						<?php
+   						  $copy_date = "Copyright 	&copy; 2020";	
+					          $copy_date = preg_replace("([0-9]+)", "2021", $copy_date);
+   
+  					           print $copy_date;
+						?>
+						-All Rights Reserved - Domain Name
 					<span> 
 						Template by OS Templates
 					</span>
