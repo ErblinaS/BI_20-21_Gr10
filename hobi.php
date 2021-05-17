@@ -246,7 +246,14 @@ else {
 				<div class="footer_text">
 					<p> Copyright © 2013-All Rights Reserved - Domain Name
 						<span> 
-							Template by OS Templates
+							<?php
+  							 $line = "Vi is the greatest word processor ever created!";
+ 
+   
+  							 if (preg_match("/\bVi\b/i", $line, $match)) :
+   						         print "Template by OS Templates";
+   							   endif;
+							?>
 						</span>
 				    </p>
 			    </div>
