@@ -144,7 +144,18 @@ function updateGameArea() {
 
 
 <div style="padding-left: 30%; margin:2%; border: dotted;">
-<p style="padding-left: 200px;">Mblidh tre numra</p>
+<p style="padding-left: 200px;">
+   <?php
+   $line = "Vi is the greatest word processor ever created!";
+   // perform a case-Insensitive search for the word "Vi"
+   
+   if (preg_match("/\bVi\b/i", $line, $match)) :
+      print "Mblidh tre numra";
+      endif;
+?>
+   
+   
+   </p>
 <form oninput="x.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)">
     <input style="width: 26%;" type="range" id="a" value="50" max="1000">
     + <input type="number" id="b" value="25">
