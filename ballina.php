@@ -381,7 +381,23 @@ else {
 							Rr. "Eqrem Çabej"<br>
 							Prishtinë, Kosovë <br>
 							10000 <br>
-							Tel: +383 44 000 000 <br>
+							Tel: +
+							    <?php
+								echo strlen("Hel"); // outputs 3
+							    ?>
+
+								<?php
+								echo strlen("Hello aa"); // outputs 8
+								?>
+								<?php
+								echo strlen("Hel"); // outputs 3
+								?> 
+								<?php
+								echo strlen("Hell"); // outputs 3
+								?>
+							    
+							    
+							    4 000 000 <br>
 							Fax: +383 38 000 000 <br>
 							<a href="mailto:revistalifestyleks@gmail.com">E-mail: revistalifestyleks@gmail.com</a> <br>
 							
