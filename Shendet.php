@@ -41,26 +41,26 @@ else {
 				    <br><br><br>
 					<nav>
 		 			     <ul class="navigation">
-				  		 <li><a href="ballina.html">BALLINA</a></li>
+				  		 <li><a href="ballina.php">BALLINA</a></li>
 				  		 <li><a href="#">FULL WIDTH</a></li>
 							
 						 <li id="dropdowni"><a href="#">KATEGORITË</a>
 							<ul>    
-								<li><a href="mode.html">Modë</a></li>
-								<li><a href="shendet.html">Shëndet</a></li>
-								<li><a href="hobi.html">Hobi</a></li>
-								<li><a href="storjet.html">Storje</a></li>
+								<li><a href="mode.php">Modë</a></li>
+								<li><a href="shendet.php">Shëndet</a></li>
+								<li><a href="hobi.php">Hobi</a></li>
+								<li><a href="storjet.php">Storje</a></li>
 							</ul>
 						 </li>
 
-						 <li><a href="loja.html">LOJA</a></li>
-						<li><a href="shendet.html">GALERIA</a></li>
+						 <li><a href="loja.php">LOJA</a></li>
+						<li><a href="shendet.php">GALERIA</a></li>
 						
 						<li id="dropdowni"><a href="#">KYÇU/REGJISTROHU</a>
 							<ul>    
-								<li><a href="dragdrop.html">Kyçu</a></li>
-								<li><a href="regjistrimi.html">Regjistrohu</a></li>
-								<li><a href="contact.html">Na kontakto</a></li>
+								<li><a href="dragdrop.php">Kyçu</a></li>
+								<li><a href="regjistrimi.php">Regjistrohu</a></li>
+								<li><a href="contact.php">Na kontakto</a></li>
 							</ul>
 					    </li>						
 				  	     </ul>
@@ -285,7 +285,7 @@ else {
 								<tr>
 									<th style="padding-bottom: 15px;" align="center" colspan="4">
 									<p>Na kontaktoni për të propozuar muzikën që juve ju pëlqen! </p>
-									<a id="contact2" href="contact.html">NA KONTAKTONI</a>
+									<a id="contact2" href="contact.php">NA KONTAKTONI</a>
 									</th>
 
 
