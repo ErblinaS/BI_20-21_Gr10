@@ -139,7 +139,7 @@ setcookie("Free_cookies",$color,time()-3600);
 ?>
                 <input type="email" name="email" autocomplete="on" required>
 
-                //Fjalkalimi
+                
                 <?php
    try {
       $error = 'kalimi';
