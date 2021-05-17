@@ -92,7 +92,11 @@ else {
 									  echo trim($string);
 			   						?></h4>
 									<p><a href="https://www.thetrendspotter.net/fashion-trends-from-spring-summer-2019-fashion-weeks/" target="_blank">
-									   10 stile trendi vjeshtore që dominuan në vitin 2020</a></p>
+									   <?php
+				                    			   $string = " \n 10 stile trendi vjeshtore që dominuan në vitin 2020 \t\t";
+				                     			  echo ltrim($string);
+			                      				  ?>
+										</a></p>
 									 <p><a href="https://www.cosmopolitan.com/style-beauty/fashion/g30256598/fashion-trends-2020/" target="_blank">
 									     Trende të 2020-tës që do iu përcjellin edhe në 2021-tën</a></p>
 									 <p><a href="https://www.vogue.com/article/fall-2020-biggest-street-style-trends" target="_blank">
