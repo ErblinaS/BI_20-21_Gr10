@@ -109,7 +109,11 @@ else {
 						  			<img src="img/trendet2021.jpg" width="300" height="170" alt="img2">
 						  			<h4>TRENDET 2021</h4>
 						  			<p><a href="https://www.harpersbazaar.com/fashion/fashion-week/g34074135/spring-2021-fashion-trends/" target="_blank">
-									   12 trende të koleksioneve për pranverën 2021</a></p>
+									   <?php
+				                     				  $string = " \n 12 trende të koleksioneve për pranverën 2021 \t\t";
+				                      				   echo ltrim($string);
+			                       					 ?>
+										</a></p>
 								        <p><a href="https://www.net-a-porter.com/en-us/porter/article-844911deeddee838/fashion/art-of-style/ss21-fashion-trends" target="_blank">
 									    Si t'i kombinojmë veshjet e të gjitha stileve në vitin 2021</a>	</p>
 								        <p><a href="https://www.pantone.com/articles/fashion-color-trend-report/new-york-fashion-week-spring-summer-2021">
@@ -121,7 +125,10 @@ else {
 					   			<div class="single_facilis" >
 									<img src="img/more1.jpg" width="300" height="170" alt="img1">   
 					     			
-					      			<p>- Bob Dylan prinë në listën e 50 artistëve meshkuj më me stil. 
+					      			<p><?php
+				                     			  $string = " \n  Bob Dylan prinë në listën e 50 artistëve meshkuj më me stil.  \t\t";
+				                     			  echo ltrim($string);
+			                       				 ?> 
 								  <a href="https://www.esquire.com/style/advice/g799/most-stylish-musicians/" target="_blank">Lista.</a></p>
 							    <!--    <p> - Fustanet janë veshja e dytë më e vjetër. Madje deri ne vitet 1600-1700 edhe burrat edhe gratë i vishnin 
 										ato. 
