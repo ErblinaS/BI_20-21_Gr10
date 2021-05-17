@@ -75,14 +75,14 @@ setcookie("Free_cookies",$color,time()-3600);
                
                <li id="dropdowni"><a href="#">KATEGORITË</a>
                 <ul>    
-                  <li><a href="mode.html">Modë</a></li>
-                  <li><a href="shendet.html">Shëndet</a></li>
-                  <li><a href="hobi.html">Hobi</a></li>
-                  <li><a href="storjet.html">Storje</a></li>
+                  <li><a href="mode.php">Modë</a></li>
+                  <li><a href="shendet.php">Shëndet</a></li>
+                  <li><a href="hobi.php">Hobi</a></li>
+                  <li><a href="storjet.php">Storje</a></li>
                 </ul>
                </li>
 
-               <li><a href="loja.html">LOJA</a></li>
+               <li><a href="loja.php">LOJA</a></li>
                <li><a href="gallery.php">GALERIA</a></li>
                
 					   	<li id="dropdowni"><a href="#">KYÇU/REGJISTROHU</a>
@@ -123,7 +123,7 @@ setcookie("Free_cookies",$color,time()-3600);
                     <button name="submit" type="submit" id="contact-submit" data-submit="...Duke u procesuar">
                         Kyçu</button>
                     <p style="text-align: center; padding-top: 20px;"> 
-                        <br><a href="regjistrimi.html"> Nuk keni llogari? Dëshironi të regjistroheni? <br></a></p>
+                        <br><a href="regjistrimi.php"> Nuk keni llogari? Dëshironi të regjistroheni? <br></a></p>
                 </fieldset>
             </div>
             </form>
