@@ -264,7 +264,18 @@ else {
 							
 							
 							
-						<h2 id="s_button"><a href="storjet.php" >Historitë tuaja </a></h2>
+						<h2 id="s_button"><a href="storjet.php" >
+							<?php
+								echo substr('Historit', 0, 3);  // His
+								echo substr('Historit', 3, 5);  // tor
+								echo substr('Historit', 5, 5);  // i
+								echo substr('Historit ', -1, 0); // t
+								echo substr(' tuaja', 0, 5); // tuaja
+
+
+							?>
+							
+							</a></h2>
 						<div class="facilis_border"></div>
 					   </div>
 						     
