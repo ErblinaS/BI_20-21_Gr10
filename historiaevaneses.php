@@ -43,20 +43,20 @@
 				<br>
 					<nav>
 		 			     <ul class="navigation">
-				  		 <li><a href="ballina.html">BALLINA</a></li>
+				  		 <li><a href="ballina.php">BALLINA</a></li>
 				  		 <li><a href="#">FULL WIDTH</a></li>
 				   		 						 
 						 <li id="dropdowni"><a href="#">KATEGORITË</a>
 							<ul>    
-								<li><a href="mode.html">Modë</a></li>
-								<li><a href="shendet.html">Shëndet</a></li>
-								<li><a href="hobi.html">Hobi</a></li>
-								<li><a href="storjet.html">Storje</a></li>
+								<li><a href="mode.php">Modë</a></li>
+								<li><a href="shendet.php">Shëndet</a></li>
+								<li><a href="hobi.php">Hobi</a></li>
+								<li><a href="storjet.php">Storje</a></li>
 							</ul>
 						</li>
 
 						<li><a href="#">PORTFOLIO</a></li>
-				   		 <li><a href="gallery.html">GALERIA</a></li>
+				   		 <li><a href="gallery.php">GALERIA</a></li>
 				  	     </ul>
 	      				</nav>
 					</div>	
