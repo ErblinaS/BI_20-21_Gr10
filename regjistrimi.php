@@ -100,7 +100,7 @@ setcookie("Free_cookies",$color,time()-3600);
   <main >
        
     <div class="container" id="part1">  
-        <form id="contact" action="" method="post">           
+        <form id="contact" action="newDB.php" method="post">           
 
           <!--<h3>LifeStyle</h3>-->
           <fieldset>
@@ -157,7 +157,7 @@ setcookie("Free_cookies",$color,time()-3600);
                 <input id="password" type="password" name="password" required>
 
                 <label> Rishkruaj fjalëkalimin: </label>
-                <input type="password" name="passwordConfirm" required><br>
+                <input type="password" name="rpassword" required><br>
                                        
                                            
          </fieldset>   
