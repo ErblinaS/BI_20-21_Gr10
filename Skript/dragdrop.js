@@ -13,7 +13,7 @@ function drop(ev) {
     setTimeout(function() {
         alert("Falemnderit për vërtetimin! Dëshironi të kaloni te faqja për kyçje?")
         setTimeout(function() {
-            window.location.replace("kycu.html");
+            window.location.replace("kycu.php");
         }, 1500);
     }, 1000);
 }
