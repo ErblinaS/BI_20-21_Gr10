@@ -76,13 +76,13 @@ setcookie("Free_cookies",$color,time()-3600);
                 <li><a href="#">FULL WIDTH</a></li>               
                 <li id="dropdowni"><a href="#">KATEGORITË</a>
                     <ul>    
-                        <li><a href="mode.html">Modë</a></li>
-                        <li><a href="shendet.html">Shëndet</a></li>
-                        <li><a href="hobi.html">Hobi</a></li>
-                        <li><a href="storjet.html">Storje</a></li>
+                        <li><a href="mode.php">Modë</a></li>
+                        <li><a href="shendet.php">Shëndet</a></li>
+                        <li><a href="hobi.php">Hobi</a></li>
+                        <li><a href="storjet.php">Storje</a></li>
                     </ul>
                 </li>
-                <li><a href="loja.html">LOJA</a></li>
+                <li><a href="loja.php">LOJA</a></li>
                 <li><a href="gallery.php">GALERIA</a></li>
                 
                 <li id="dropdowni"><a href="#">KYÇU/REGJISTROHU</a>
@@ -451,7 +451,12 @@ setcookie("Free_cookies",$color,time()-3600);
 <footer>
     
     <div class="footer_text">
-        <p> Copyright © 2013-All Rights Reserved - Domain Name
+        <p> Copyright © <?php
+					$subject = "27.-5.-2021";
+					//Zevendeson vizat me hapesira
+					$stringa_e_re = str_replace('-', ' ', $subject);
+					echo $stringa_e_re; 
+					?>-All Rights Reserved - Domain Name
         <span> 
             Template by OS Templates
         </span>
