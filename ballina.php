@@ -60,8 +60,8 @@ else {
 							</ul>
 						 </li>						   
 
-				   		 <li><a href="loja.html">LOJA</a></li>
-				   		 <li><a href="Gallery.html">GALERIA</a></li>
+				   		 <li><a href="loja.php">LOJA</a></li>
+				   		 <li><a href="Gallery.php">GALERIA</a></li>
 						
 						<li id="dropdowni"><a href="#">KYÇU/REGJISTROHU</a>
 								<ul>    
@@ -141,7 +141,7 @@ else {
 
                     echo $string;
                    ?></mark></h2>
-					<a href="contact.html"><?php
+					<a href="contact.php"><?php
 				$string = " \n NA KONTAKTONI \t\t";
 				echo trim($string);
 			   ?></a>
