@@ -87,7 +87,10 @@ else {
 					        <li>
 								<div class="single_facilis" >
 									<img src="img/trendet2020.jpg" width="300" height="170" alt="img1">
-									<h4>TRENDET 2020</h4>
+									<h4><?php
+				                    			  $string = " \n TRENDET 2020 \t\t";
+									  echo trim($string);
+			   						?></h4>
 									<p><a href="https://www.thetrendspotter.net/fashion-trends-from-spring-summer-2019-fashion-weeks/" target="_blank">
 									   10 stile trendi vjeshtore që dominuan në vitin 2020</a></p>
 									 <p><a href="https://www.cosmopolitan.com/style-beauty/fashion/g30256598/fashion-trends-2020/" target="_blank">
