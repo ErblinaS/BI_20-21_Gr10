@@ -284,7 +284,17 @@ else {
 					        <li>
 						   <div class="single_facilis">
 							<img src="img/pikture.jpg" width="300" height="170" alt="img1">
-							<h4> Inspiruese </h4>
+							<h4> 
+							   
+							   <?php
+   								$line = "Vi is the greatest word processor ever created!";
+  								 // perform a case-Insensitive search for the word "Vi"
+   
+  								 if (preg_match("/\bVi\b/i", $line, $match)) :
+    								  print "Inspiruese";
+     								  endif;
+								?>	
+							   </h4>
 							<p> Një vajzë e re në moshë, por që ka arritur majat e suksesit që në klasë të pestë. 
 								Vanesa na frymëzon me historinë e saj rreth pasionit për pikturën.</p>
 						   </div>
