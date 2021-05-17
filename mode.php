@@ -98,7 +98,11 @@ else {
 			                      				  ?>
 										</a></p>
 									 <p><a href="https://www.cosmopolitan.com/style-beauty/fashion/g30256598/fashion-trends-2020/" target="_blank">
-									     Trende të 2020-tës që do iu përcjellin edhe në 2021-tën</a></p>
+									      <?php
+				                     				  $string = " \n Trende të 2020-tës që do iu përcjellin edhe në 2021-tën \t\t";
+				                      				   echo rtrim($string);
+			                        				?>
+										 </a></p>
 									 <p><a href="https://www.vogue.com/article/fall-2020-biggest-street-style-trends" target="_blank">
 									     8 trendet e veshjeve vjeshtore "Street style"</a></p>
 						   		</div>
@@ -115,7 +119,11 @@ else {
 			                       					 ?>
 										</a></p>
 								        <p><a href="https://www.net-a-porter.com/en-us/porter/article-844911deeddee838/fashion/art-of-style/ss21-fashion-trends" target="_blank">
-									    Si t'i kombinojmë veshjet e të gjitha stileve në vitin 2021</a>	</p>
+									    <?php
+				                       				$string = " \n  Si t'i kombinojmë veshjet e të gjitha stileve në vitin 2021 \t\t";
+				                      				 echo rtrim($string);
+			                       				     ?>
+										</a>	</p>
 								        <p><a href="https://www.pantone.com/articles/fashion-color-trend-report/new-york-fashion-week-spring-summer-2021">
 									   Ngjyrat e veshjeve që priten të dominojnë në vitin 2021</a></p>
 					   			</div>
