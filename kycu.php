@@ -102,17 +102,17 @@ setcookie("Free_cookies",$color,time()-3600);
     <main>
 
        <div class="container">  
-         <form id="contact" action="" method="post" style="height: 400px"> 
+         <form id="contact" action="process.php" method="post" style="height: 400px"> 
           <p style="text-align: center; font-size: 25px; font-weight: bolder; padding: 15px;">
             Kyçu në llogarinë tënde</p>
                     
 
                 <label ><b> E-mail-i juaj</b><p><br></p></label>
                 <input style="border-radius: 0px; border: 2px solid #c495b2;" 
-                type="email" placeholder="E-mail-i" required>
+                type="email" name="email" placeholder="E-mail-i" required>
                 
                 <label style="padding-bottom: 30px;"><b>Fjalëkalimi</b></label>                
-                <input type="password" placeholder="Fjalëkalimi" required>
+                <input type="password" name="password" placeholder="Fjalëkalimi" required>
                 <br>
                 
                 <label style="padding-top: 30px;">
