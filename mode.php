@@ -74,7 +74,11 @@ else {
 					
 				<section style="padding-top: 140px;" id="facilis">
 					<div class="facilis_title">
-						<h2 style="padding-top: 20px;">Shumëçka nga bota e modës </h2>
+						<h2 style="padding-top: 20px;"><?php
+				                      $string = " \n Shumëçka nga bota e modës \t\t";
+									  echo trim($string);
+			   					?>
+						</h2>
 						<div class="facilis_border"></div>
 					</div>
 						     
