@@ -1,0 +1,8 @@
+<br><br>
+Thank You For Contacting Us!!!<br>
+If u need help faster, u can email this personal email:
+<br>
+<img float="left" src="e.jpg" alt="E" width="100" height="100">
+<address>
+<a href="esma.krasniqi@gmail.com">esma.krasniqi@gmail.com</a>
+</address>
