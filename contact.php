@@ -163,14 +163,14 @@ else {
                
                <li id="dropdowni"><a href="#">KATEGORITË</a>
                 <ul>    
-                  <li><a href="mode.html">Modë</a></li>
-                  <li><a href="shendet.html">Shëndet</a></li>
-                  <li><a href="hobi.html">Hobi</a></li>
-                  <li><a href="storjet.html">Storje</a></li>
+                  <li><a href="mode.php">Modë</a></li>
+                  <li><a href="shendet.php">Shëndet</a></li>
+                  <li><a href="hobi.php">Hobi</a></li>
+                  <li><a href="storjet.php">Storje</a></li>
                 </ul>
                </li>
 
-               <li><a href="loja.html">LOJA</a></li>
+               <li><a href="loja.php">LOJA</a></li>
                <li><a href="gallery.php">GALERIA</a></li>
                
    						<li id="dropdowni"><a href="#">KYÇU/REGJISTROHU</a>
