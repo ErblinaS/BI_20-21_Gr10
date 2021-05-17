@@ -193,7 +193,7 @@ else {
        <div class="container" style="margin-bottom: 20px;">  
   <h2>Na kontaktoni këtu</h2>
   <div id="error_message"></div>
-  <form action="contactform.php" method="post" id="myform" onsubmit="return validate();" style="padding: 20px;">
+   <form id="myform" onsubmit="return validate();" style="padding: 20px;">
     <div class="input_field">
         <input type="text" placeholder="Emri*" name="username" id="name" required autofocus>
     </div>
