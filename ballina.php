@@ -377,7 +377,7 @@ else {
 				    </li>
 			        </ul>
 				   </div>
-				   <h2 id="stories" style="margin-left: 27%;"><a href="storjet.html" >LEXO MË SHUMË STORJE DHE LAJME >></a></h2>
+				   <h2 id="stories" style="margin-left: 27%;"><a href="storjet.php" >LEXO MË SHUMË STORJE DHE LAJME >></a></h2>
 	             </section>
 			
 		     <section id="footer_ContactUs" style="margin-top: -80px;">
