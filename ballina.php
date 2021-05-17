@@ -39,9 +39,7 @@ else {
 						<button id="Button" type="submit"><i class="fas fa-search"></i></button>
 					</form>
 				    </div>
-				    Te gjitha kerkimet me :
-				    <?php   
-				    echo $_GET["name"] ?>
+				    
 				 <script type="text/javascript">document.getElementById("Button").disabled = false;</script>
 				<br>
 				<br>
