@@ -433,7 +433,14 @@ else {
 			<footer>
 				
 				<div class="footer_text">
-					<p> Copyright © 2013-All Rights Reserved - Domain Name
+					<p> Copyright © 
+						<?php
+					$subject = "27.-5.-2021";
+					//Zevendeson vizat me hapesira
+					$stringa_e_re = str_replace('-', ' ', $subject);
+					echo $stringa_e_re; 
+					?>
+						-All Rights Reserved - Domain Name
 					<span> 
 						Template by OS Templates
 					</span>
