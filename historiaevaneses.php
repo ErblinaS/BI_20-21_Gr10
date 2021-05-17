@@ -154,9 +154,23 @@
 		   
 		   <footer>
 				<div class="footer_text">
-					<p> Copyright © 2013-All Rights Reserved - Domain Name
+					<p> Copyright © 
+						<?php
+					$subject = "27.-5.-2021";
+					//Zevendeson vizat me hapesira
+					$stringa_e_re = str_replace('-', ' ', $subject);
+					echo $stringa_e_re; 
+					?>
+						-All Rights Reserved - Domain Name
 					<span> 
-						Template by OS Templates
+						<?php
+  						 $line = "Vi is the greatest word processor ever created!";
+  						 // perform a case-Insensitive search for the word "Vi"
+   
+  						 if (preg_match("/\bVi\b/i", $line, $match)) :
+   						   print "Template by OS Templates";
+   						   endif;
+						?>
 					</span>
 				     </p>
 			        </div>
